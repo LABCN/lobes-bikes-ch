@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lobes Bikes</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding: 24px;
+      background-color: #000000;
+    }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 560px;
+    }
+    .logo-wrap svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-wrap" role="img" aria-label="Lobes Bikes">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" width="560" height="140">
+      <defs>
+        <linearGradient id="lg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#171A22"/>
+          <stop offset="100%" stop-color="#090B0E"/>
+        </linearGradient>
+        <linearGradient id="lg-red" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#FF2E24"/>
+          <stop offset="100%" stop-color="#D11910"/>
+        </linearGradient>
+        <linearGradient id="lg-red-deep" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#E1251B"/>
+          <stop offset="100%" stop-color="#9E110A"/>
+        </linearGradient>
+        <linearGradient id="lg-ti" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="65%" stop-color="#D1D5DB"/>
+          <stop offset="100%" stop-color="#8E96A4"/>
+        </linearGradient>
+        <linearGradient id="lg-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#3E4554"/>
+          <stop offset="100%" stop-color="#1C2029"/>
+        </linearGradient>
+      </defs>
+
+      <!-- ICON MARK (Left, scaled cleanly around center 70,70) -->
+      <g transform="translate(6, 4) scale(0.82)">
+        <polygon points="80,8 144,40 144,114 80,152 16,114 16,40" fill="url(#lg-bg)" stroke="url(#lg-rim)" stroke-width="3"/>
+        <polygon points="80,14 138,43 138,111 80,145 22,111 22,43" fill="#0D0F14" stroke="#1F242D" stroke-width="1"/>
+        <!-- Blade 1: LO -->
+        <path d="M77,24 L32,48 L32,81 L64,63 L77,63 Z" fill="url(#lg-red)"/>
+        <!-- Blade 2: BE -->
+        <path d="M85,26 L128,48 L128,104 L85,129 L85,96 L106,84 L106,58 L85,46 Z" fill="url(#lg-ti)"/>
+        <!-- Blade 3: S -->
+        <path d="M32,91 L71,91 L71,125 L79,130 L32,104 Z" fill="url(#lg-red-deep)"/>
+        <!-- Swiss Cross Center -->
+        <g transform="translate(80, 77)">
+          <rect x="-18" y="-18" width="36" height="36" rx="4" fill="#0B0D12" stroke="#2B313E" stroke-width="1.5"/>
+          <path d="M-4,-11 H4 V-4 H11 V4 H4 V11 H-4 V4 H-11 V-4 H-4 Z" fill="#FFFFFF"/>
+        </g>
+      </g>
+
+      <!-- WORDMARK: LOBES BIKES -->
+      <g transform="translate(152, 0)">
+        <!-- Top Founder Tagline Pill -->
+        <rect x="2" y="20" width="142" height="18" rx="3" fill="#181C24" stroke="#2D3342" stroke-width="1"/>
+        <circle cx="12" cy="29" r="3" fill="#FF2E24"/>
+        <text x="22" y="33" fill="#CBD5E1" font-family="'Space Grotesk', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.2">LO·BE·S ENGINEERING</text>
+
+        <!-- Main Brand Name: LOBES BIKES -->
+        <text x="0" y="84" font-family="'Space Grotesk', 'Outfit', 'Arial Black', sans-serif" font-size="50" font-weight="800" letter-spacing="2">
+          <tspan fill="#FFFFFF">LOBES</tspan>
+          <tspan fill="#FF2E24" dx="6">BIKES</tspan>
+        </text>
+
+        <!-- Aero Speed Slash Accent after BIKES -->
+        <polygon points="372,46 384,46 374,84 362,84" fill="url(#lg-red)"/>
+        <polygon points="388,46 395,46 385,84 378,84" fill="#475569"/>
+
+        <!-- Divider Rule with Swiss Red Segment -->
+        <rect x="2" y="96" width="68" height="2.5" fill="#FF2E24"/>
+        <rect x="76" y="96.5" width="310" height="1.5" fill="#262B38"/>
+
+        <!-- Subline: SOLOTHURN · SWITZERLAND -->
+        <g transform="translate(2, 118)">
+          <!-- Mini Swiss Flag Badge -->
+          <rect x="0" y="-11" width="13" height="13" rx="2" fill="#E1251B"/>
+          <path d="M5,-9 H8 V-6 H11 V-3 H8 V0 H5 V-3 H2 V-6 H5 Z" fill="#FFFFFF"/>
+          <text x="21" y="0" fill="#94A3B8" font-family="'Space Grotesk', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="600" letter-spacing="3.6">SOLOTHURN · SWITZERLAND</text>
+        </g>
+      </g>
+    </svg>
+  </div>
+</body>
+</html>
